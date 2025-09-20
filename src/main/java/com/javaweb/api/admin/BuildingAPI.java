@@ -12,7 +12,7 @@ import java.util.List;
 @RestController(value = "buildingAPIOfAdmin")
 @RequestMapping("/admin/building")
 public class BuildingAPI {
-    
+    hehe
     @Autowired
     private BuildingService buildingService;
 
