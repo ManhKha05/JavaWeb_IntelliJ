@@ -86,6 +86,9 @@ public class BuildingEntity extends BaseEntity {
 //    @OneToMany(mappedBy = "buildingEntity", fetch = FetchType.LAZY)
 //    private List<AssignBuildingEntity> assignBuildingEntities = new ArrayList<>();
 
+    @OneToMany(mappedBy = "building", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<RentAreaEntity> rentAreas = new ArrayList<>();
+
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "assignmentbuilding",
             joinColumns = @JoinColumn(name = "buildingid", nullable = false),
@@ -311,8 +314,14 @@ public class BuildingEntity extends BaseEntity {
     public List<UserEntity> getUserEntities() {
         return userEntities;
     }
-
     public void setUserEntities(List<UserEntity> userEntities) {
         this.userEntities = userEntities;
+    }
+
+    public List<RentAreaEntity> getRentAreas() {
+        return rentAreas;
+    }
+    public void setRentAreas(List<RentAreaEntity> rentAreas) {
+        this.rentAreas = rentAreas;
     }
 }

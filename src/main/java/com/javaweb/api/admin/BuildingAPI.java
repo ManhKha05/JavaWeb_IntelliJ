@@ -19,13 +19,15 @@ public class BuildingAPI {
     @PostMapping
     public void addOrUpdateBuilding(@RequestBody BuildingDTO buildingDTO) {
         //Xuong DB để Update hoặc thêm mới
-        System.out.println("OK");
+        buildingService.addOrUpdateBuilding(buildingDTO);
+        System.out.println("Add or Update Building Success");
     }
 
     @DeleteMapping("/{ids}")
     public void deleteBuilding(@PathVariable List<Long> ids) {
         //Xuong DB xoa building theo dsach id gui ve
-        System.out.println("ok");
+        buildingService.deleteBuildings(ids);
+        System.out.println("Delete Success");
     }
 
     @GetMapping("/{id}/staffs")
@@ -37,8 +39,8 @@ public class BuildingAPI {
 
     @PostMapping("/assignment")
     public void assignBuilding(@RequestBody AssignmentBuildingDTO assignmentBuildingDTO) {
-        System.out.println("OK");
-
+        buildingService.assignBuilding(assignmentBuildingDTO);
+        System.out.println("Assign Building Success");
     }
 
 }

@@ -7,7 +7,7 @@ import java.util.TreeMap;
 public enum District {
     QUAN_1("Quận 1"),
     QUAN_3("Quận 3"),
-    QUAN_5("Quận 5"),
+    QUAN_4("Quận 4"),
     QUAN_2("Quận 2"),
     QUAN_10("Quận 10"),
     QUAN_8("Quận 8"),
@@ -23,6 +23,17 @@ public enum District {
     }
     public String getDistrictName() {
         return districtName;
+    }
+
+    private static final Map<String, District> LOOKUP = new TreeMap<>();
+    static {
+        for (District district : District.values()) {
+            LOOKUP.put(district.name(), district);
+        }
+    }
+    public static String findDistrictNameByCode(String code){
+        District district = LOOKUP.get(code);
+        return district.districtName;
     }
     public static Map<String, String> type(){
         Map<String, String> districts =  new TreeMap<>();

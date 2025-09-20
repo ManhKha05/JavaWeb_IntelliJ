@@ -138,7 +138,7 @@
                         </div>
                         <div class="col-xs-9">
 <%--                            <input class="form-control" type="text" name="rentarea" id="rentarea">--%>
-                            <form:input class="form-control" path=""/>
+                            <form:input class="form-control" path="rentArea"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -147,7 +147,7 @@
                         </div>
                         <div class="col-xs-9">
 <%--                            <input class="form-control" type="number" name="rentprice" id="rentprice">--%>
-                            <form:input class="form-control" path=""/>
+                            <form:input class="form-control" path="rentPrice"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -155,8 +155,7 @@
                             <h5>Mô tả giá</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="text" name="rentpricedescription"
-                                   id="rentpricedescription">
+                            <form:input class="form-control" path="rentPriceDescription" />
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -164,7 +163,7 @@
                             <h5>Phí dịch vụ</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="servicefee" id="servicefee">
+                            <form:input class="form-control" path="serviceFee"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -172,7 +171,7 @@
                             <h5>Phí ô tô</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="carfee" id="carfee">
+                            <form:input class="form-control" path="carFee"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -180,7 +179,7 @@
                             <h5>Phí mô tô</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="motorbikefee" id="motorbikefee">
+                            <form:input class="form-control" path="motoFee"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -188,7 +187,7 @@
                             <h5>Phí ngoài giờ</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="overtimefee" id="overtimefee">
+                            <form:input class="form-control" path="overtimeFee"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -196,7 +195,7 @@
                             <h5>Tiền điện</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="electricityfee" id="electricityfee">
+                            <form:input class="form-control" path="electricityFee"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -204,7 +203,7 @@
                             <h5>Đặt cọc</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="deposit" id="deposit">
+                            <form:input class="form-control" path="deposit"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -212,7 +211,7 @@
                             <h5>Thanh toán</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="payment" id="payment">
+                            <form:input class="form-control" path="payment"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -220,7 +219,7 @@
                             <h5>Thời hạn thuê</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="renttime" id="renttime">
+                            <form:input class="form-control" path="rentTime"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -228,7 +227,7 @@
                             <h5>Thời gian trang trí</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="decorationtime" id="decorationtime">
+                            <form:input class="form-control" path="decorationTime"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -236,7 +235,7 @@
                             <h5>Tên quản lí</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="text" name="managername" id="managername">
+                            <form:input class="form-control" path="managerName"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -244,7 +243,7 @@
                             <h5>SĐT quản lý</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="managerphonenumber" id="managerphonenumber">
+                            <form:input class="form-control" path="managerPhone"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -252,7 +251,7 @@
                             <h5>Phí môi giới</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="number" name="brokeragefee" id="brokeragefee">
+                            <form:input class="form-control" path="brokerageFee"/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -268,7 +267,7 @@
                             <h5>Ghi chú</h5>
                         </div>
                         <div class="col-xs-9">
-                            <input class="form-control" type="text" name="" id="">
+                            <form:input class="form-control" path=""/>
                         </div>
                     </div>
                     <div class="col-xs-12 form-group">
@@ -316,7 +315,18 @@
             addOrUpdateBuilding(data);
         }
         else{
-            window.location.href = "/admin/building-edit?typeCode=require";
+            // window.location.href = "/admin/building-edit?typeCode=require";
+            $.ajax({
+                type: "GET",
+                url: "/admin/building-edit",
+                contentType: JSON.stringify(data),
+                success: function (response){
+                    console.log("Yêu cầu chọn Loại tòa nhà");
+                },
+                error: function (response){
+                    console.log(response);
+                }
+            })
         }
     });
 
@@ -326,8 +336,9 @@
             url: "${buildingAPI}",
             data: JSON.stringify(data),
             contentType: "application/json",
-            dataType: "JSON",
+            // dataType: "JSON",
             success: function (respond) {
+                window.location.href = "/admin/building-list";
                 console.log("Success");
             },
             error: function (respond) {

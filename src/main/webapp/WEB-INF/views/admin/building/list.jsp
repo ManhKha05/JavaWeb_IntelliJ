@@ -413,6 +413,7 @@
             type: "DELETE",
             url: "${buildingAPI}/" + data,
             success: function (response) {
+                location.reload();
                 console.log("Success");
             },
             error: function (response) {
