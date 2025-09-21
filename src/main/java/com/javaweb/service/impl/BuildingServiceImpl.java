@@ -86,12 +86,14 @@ public class BuildingServiceImpl implements BuildingService {
     public void addOrUpdateBuilding(BuildingDTO buildingDTO) {
         BuildingEntity buildingEntity = buildingConverter.convertBuildingEntity(buildingDTO);
         buildingEntity.getRentAreas().clear();
-        String[] areas = buildingDTO.getRentArea().split(",");
-        for(String area : areas){
-            RentAreaEntity rentAreaEntity = new RentAreaEntity();
-            rentAreaEntity.setValue(Long.parseLong(area.trim()));
-            rentAreaEntity.setBuilding(buildingEntity);
-            buildingEntity.getRentAreas().add(rentAreaEntity);
+        if(!buildingDTO.getRentArea().equals("")){
+            String[] areas = buildingDTO.getRentArea().split(",");
+            for(String area : areas){
+                RentAreaEntity rentAreaEntity = new RentAreaEntity();
+                rentAreaEntity.setValue(Long.parseLong(area.trim()));
+                rentAreaEntity.setBuilding(buildingEntity);
+                buildingEntity.getRentAreas().add(rentAreaEntity);
+            }
         }
 
         buildingRepository.save(buildingEntity);

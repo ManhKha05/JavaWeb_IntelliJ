@@ -311,15 +311,15 @@
             }
         })
         data['typeCode'] = typeCode;
-        if(typeCode.length != 0){
+        if(typeCode.length !== 0){
             addOrUpdateBuilding(data);
         }
         else{
             // window.location.href = "/admin/building-edit?typeCode=require";
             $.ajax({
-                type: "GET",
-                url: "/admin/building-edit",
-                contentType: JSON.stringify(data),
+                type: "POST",
+                url: "/admin/building-edit?typeCode=require",
+                data: JSON.stringify(data),
                 success: function (response){
                     console.log("Yêu cầu chọn Loại tòa nhà");
                 },
