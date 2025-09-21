@@ -95,7 +95,6 @@ public class BuildingServiceImpl implements BuildingService {
                 buildingEntity.getRentAreas().add(rentAreaEntity);
             }
         }
-
         buildingRepository.save(buildingEntity);
     }
 

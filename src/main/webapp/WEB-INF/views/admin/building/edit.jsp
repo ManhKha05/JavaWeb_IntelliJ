@@ -317,9 +317,9 @@
         else{
             // window.location.href = "/admin/building-edit?typeCode=require";
             $.ajax({
-                type: "POST",
-                url: "/admin/building-edit?typeCode=require",
-                data: JSON.stringify(data),
+                type: "GET",
+                url: "/admin/building-edit",
+                // data: JSON.stringify(data),
                 success: function (response){
                     console.log("Yêu cầu chọn Loại tòa nhà");
                 },
